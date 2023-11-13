@@ -2,7 +2,7 @@
 
 This typescript package is used to generate data using esri's feature layers in the object-array format for the application to 'react-select'.
 
-Just download index.ts in src folder as zip and use it (as of November 13, 2023). import fails
+Just download **index.ts** in src folder as zip and use it (as of November 13, 2023). import fails
 
 # Basic Configuration
 
@@ -75,9 +75,9 @@ const [initContractPacakgeCompType, setInitContractPacakgeCompType] = useState([
 
 As of November 13, 2023
 
-1. Use esri's feature layers stored in ArcGIS Online or Portal for ArcGIS. Other table formats will fail.
+1. Use **esri's feature** layers stored in ArcGIS Online or Portal for ArcGIS. Other table formats will fail.
 2. You can include only up to two feature layers.
 3. You can include only up to three field names (i.e., three dropdown lists)
 4. This data format is configured to accommodate specifically 'react-select'.
 5. The package does not accommodate select-all options (in the future, this package might include select-all options in dropdown lists).
-6. Associated with No.5, when multile dropdown lists are created, these lists are completely cascading (e.g., you need to choose one from the first dropdown list in order to choose from the 2nd dropdown list).
+6. Associated with No.5, when multile dropdown lists are created, these lists are completely cascading (e.g., you need to choose from the first dropdown list in order to choose from the 2nd dropdown list).
