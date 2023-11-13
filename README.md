@@ -2,7 +2,7 @@
 
 This typescript package is used to generate data using esri's feature layers in the object-array format for the application to 'react-select'.
 
-Just download index.tx in src folder as zip and use it (as of November 13, 2023). import fails
+Just download index.ts in src folder as zip and use it (as of November 13, 2023). import fails
 
 # Basic Configuration
 
@@ -56,7 +56,7 @@ const [initContractPacakgeCompType, setInitContractPacakgeCompType] = useState([
   };
 
 
-  // jsx using react
+  // jsx using react component
   return (
     <>
         <Chart
