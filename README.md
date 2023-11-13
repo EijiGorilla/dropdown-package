@@ -4,9 +4,22 @@ This typescript package is used to generate data in the object-array format for 
 
 Just download as zip and use it (as of November 13, 2023). import fails
 
+# Basic Configuration
+
+```
+const dropdownData = new DropDownData({
+    featureLayers: [*featureLayer1*, *featureLayer2*] // 2nd feature layer is optional
+    fieldNames: [*field1*, *field2*, *field3*] // 2nd and 3rd fields are optional
+})
+
+```
+
 # Usage
 
 ```
+import Select from 'react-select';
+import { DropDownData } from './customClass'; // E.g., this package is saved in customClass file.
+
 const [initContractPacakgeCompType, setInitContractPacakgeCompType] = useState([]);
 
   useEffect(() => {
@@ -55,12 +68,11 @@ const [initContractPacakgeCompType, setInitContractPacakgeCompType] = useState([
 
 ```
 
-$ const data = new
-
 ## Caution
 
 1. Use esri's feature layers stored in ArcGIS Online or Portal for ArcGIS. Other table formats will fail.
 2. You can include only up to two feature layers.
 3. You can include only up to three field names (i.e., three dropdown lists)
+4. This data format is configured to accommodate specifically 'react-select'.
 
 # dropdown-package
