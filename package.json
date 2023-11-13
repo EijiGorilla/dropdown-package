@@ -5,10 +5,20 @@
   "name": "dropdown-package-react",
   "version": "1.0.1",
   "description": "A NPM package to generate data in the object-array format for react-select",
-  "main": "index.ts",
-  "devDependencies": {},
+  "main": "./dist/index.ts",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
   "scripts": {
-    "test": "exit 0"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup"
   },
   "repository": {
     "type": "git",
