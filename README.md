@@ -2,14 +2,14 @@
 
 This typescript package is used to generate data using esri's feature layers in the object-array format for the application to 'react-select'.
 
-Just download as zip and use it (as of November 13, 2023). import fails
+Just download index.tx in src folder as zip and use it (as of November 13, 2023). import fails
 
 # Basic Configuration
 
 ```
 const dropdownData = new DropDownData({
-    featureLayers: [*featureLayer1*, *featureLayer2*] // 2nd feature layer is optional
-    fieldNames: [*field1*, *field2*, *field3*] // 2nd and 3rd fields are optional
+    featureLayers: [featureLayer1, featureLayer2] // 2nd feature layer is optional
+    fieldNames: [field1, field2, field3] // 2nd and 3rd fields are optional
 })
 
 Then you need to use Method: dropDownQuery()
