@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@arcgis/core": "^4.28.9"
+  },
+  "name": "dropdown-package",
+  "version": "1.0.0",
+  "description": "A NPM package to generate data in the object-array format for react-select",
+  "main": "index.ts",
+  "devDependencies": {},
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eijigorilla/dropdown-package.git"
+  },
+  "keywords": [
+    "react-select",
+    "dropdown"
+  ],
+  "author": "Eiji Matsuzaki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eijigorilla/dropdown-package/issues"
+  },
+  "homepage": "https://github.com/eijigorilla/dropdown-package#readme"
+}
