@@ -12,6 +12,8 @@ const dropdownData = new DropDownData({
     fieldNames: [*field1*, *field2*, *field3*] // 2nd and 3rd fields are optional
 })
 
+Then you need to use Method: dropDownQuery().textshadow()
+
 ```
 
 # Usage
