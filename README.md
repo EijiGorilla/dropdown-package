@@ -24,6 +24,13 @@ import Select from 'react-select';
 import { DropDownData } from './customClass'; // E.g., this package is saved in customClass file.
 
 const [initContractPacakgeCompType, setInitContractPacakgeCompType] = useState([]);
+  const [contractPackage, setContractPackage] = useState<any>(null);
+  const [company, setCompany] = useState(null);
+  const [type, setType] = useState<null | undefined | string>(null);
+
+  const [companyList, setCompanyList] = useState([]);
+  const [typeList, setTypeList] = useState([]);
+  const [companySelected, setCompanySelected] = useState({ name: '' });
 
   useEffect(() => {
     const dropdownData = new DropDownData({
@@ -65,6 +72,40 @@ const [initContractPacakgeCompType, setInitContractPacakgeCompType] = useState([
             type={type === null ? '' : type}
             typelist={typeList}
         />
+
+                  <div className="dropdownFilter">
+            <div className="dropdownFilterLayout">
+              <b style={{ color: 'white', margin: 10, fontSize: '0.9vw' }}></b>
+              <Select
+                placeholder="Select CP"
+                value={contractPackage}
+                options={initContractPacakgeCompType}
+                onChange={handleContractPackageChange}
+                getOptionLabel={(x: any) => x.field1}
+                styles={customstyles}
+              />
+              <br />
+              <b style={{ color: 'white', margin: 10, fontSize: '0.9vw' }}></b>
+              <Select
+                placeholder="Select Company"
+                value={company}
+                options={companyList}
+                onChange={handleCompanyChange}
+                getOptionLabel={(x: any) => x.name}
+                styles={customstyles}
+              />
+              <br />
+              <b style={{ color: 'white', margin: 10, fontSize: '0.9vw' }}></b>
+              <Select
+                placeholder="Select Type"
+                value={type}
+                options={typeList}
+                onChange={handleTypeChange}
+                getOptionLabel={(x: any) => x.name}
+                styles={customstyles}
+              />
+            </div>
+          </div>
     </>
 
   )

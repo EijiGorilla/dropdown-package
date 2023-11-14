@@ -3,7 +3,7 @@
     "@arcgis/core": "^4.28.9"
   },
   "name": "dropdown-package-react",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "A NPM package to generate data in the object-array format for react-select",
   "main": "./dist/index.ts",
   "module": "./dist/index.mjs",
