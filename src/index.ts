@@ -26,7 +26,7 @@ export class DropDownData extends Accessor {
         query11.orderByFields = [this.fieldNames[0]];
         query11.groupByFieldsForStatistics = [this.fieldNames[0]];
 
-        const pairs: any = this.featureLayers[0]
+        const pairQ: any = this.featureLayers[0]
           .queryFeatures(query11)
           .then((response: any) => {
             var stats = response.features;
@@ -46,6 +46,9 @@ export class DropDownData extends Accessor {
             );
             return pair;
           });
+
+        const pairs = await pairQ;
+
         // 2. Unique falues for field1
         const uniqueField1 = pairs
           .map((item: any) => item.field1)
@@ -71,7 +74,7 @@ export class DropDownData extends Accessor {
           this.fieldNames[1],
         ];
 
-        const pairs: any = this.featureLayers[0]
+        const pairQ: any = this.featureLayers[0]
           .queryFeatures(query12)
           .then((response: any) => {
             var stats = response.features;
@@ -95,6 +98,8 @@ export class DropDownData extends Accessor {
             );
             return pair;
           });
+
+        const pairs = await pairQ;
 
         // 2. Unique falues for field1
         const uniqueField1 = pairs
@@ -140,7 +145,7 @@ export class DropDownData extends Accessor {
           this.fieldNames[1],
         ];
 
-        const pairs: any = this.featureLayers[0]
+        const pairQ: any = this.featureLayers[0]
           .queryFeatures(query13)
           .then((response: any) => {
             var stats = response.features;
@@ -168,6 +173,8 @@ export class DropDownData extends Accessor {
             );
             return pair;
           });
+
+        const pairs = await pairQ;
 
         // 2. Unique falues for field1
         const uniqueField1 = pairs
